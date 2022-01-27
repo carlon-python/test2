@@ -8,3 +8,7 @@ class Blog(models.Model):
     content = models.TextField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    is_published = models.BooleanField(default=True)
+
+def __str__(self):
+    return f"{self.title}"
