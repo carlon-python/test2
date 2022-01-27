@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 class Blog(models.Model):
     title = models.CharField(max_length=173)
@@ -10,5 +11,5 @@ class Blog(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
 
-def __str__(self):
-    return f"{self.title}"
+    def __str__(self):
+        return f"{self.title}"
